@@ -15,6 +15,7 @@
             width = maxWidth;
         }
         var rem = width * 100 / designWidth;
+
         rootStyle = "html{font-size:" + rem + 'px !important}';
         rootItem = document.getElementById('rootsize') || document.createElement("style");
         if (!document.getElementById('rootsize')) {
@@ -35,12 +36,12 @@
     refreshRem();
 
     win.addEventListener("resize", function () {
-        clearTimeout(tid);
+        clearTimeout(tid); //防止执行两次
         tid = setTimeout(refreshRem, 300);
     }, false);
 
     win.addEventListener("pageshow", function (e) {
-        if (e.persisted) { 
+        if (e.persisted) { // 浏览器后退的时候重新计算
             clearTimeout(tid);
             tid = setTimeout(refreshRem, 300);
         }
