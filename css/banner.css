@@ -42,7 +42,7 @@ nav{
 }
 .indx-caidan{
     width:3.46rem;
-    opacity: 0;
+    display: none;
     position: fixed;
     top:0;
     right: 0;
@@ -51,7 +51,7 @@ nav{
     transition: all 0.3s;
 }
 .indx-menu:hover .indx-caidan{
-    opacity: 1;
+    display: block;
 }
 .indx-caidanwrapper{
     padding-left:.41rem;
