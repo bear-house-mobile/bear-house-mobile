@@ -1,0 +1,139 @@
+*{
+    margin:0rem ;
+    padding:0rem ; 
+    list-style: none;
+}
+/* 内容区整体部分 */
+.case-content{
+    width:100%;
+}
+/* 标题部分 */
+.title{
+    margin:0 auto;
+    text-align: center;
+    margin-bottom: .3rem;
+}
+.title-box{
+    position:relative;
+    padding:.55rem 0rem .17rem 0rem;
+}
+.title h2{
+    font-weight:normal;
+    font-size:.36rem;
+    color:#333;
+
+}
+/* 标题中间的线 */
+.title-link{
+    width:1.19rem;
+    height:3px;
+    background:#14926a;
+    position:absolute;
+    left:50%;
+    margin-left:-0.565rem;
+    top:99%;
+}
+.subtitle{
+    width:45%;
+    padding:.15rem 0rem .15rem 0rem;
+    border:.5px solid #d3d3d3;
+    color:#aaa;
+    font-size:.16rem;
+    margin:0rem auto;
+    border-radius: .25rem 0rem .25rem 0rem;
+}
+/* 内容文本标题部分 */
+.newscont-title{
+    /* width:100%; */
+    background:#fafafa;
+    border-top:.01rem solid #eee;
+    border-bottom:.01rem solid #eee;
+    padding-left:.21rem;
+}
+.newscont-title h1{
+    font-size:.36rem;
+    color:#323232;
+    font-weight:normal;
+    margin:.32rem 0rem;
+}
+.newscont-time{
+    display: flex;
+    font-size:.2rem;
+    color:#333;
+    margin-bottom:.26rem;
+}
+.newscont-time span{
+    color:#14926a;
+}
+.newscont-time p:nth-of-type(2){
+    margin-left:.25rem;
+}
+.newscont-text1{
+    color:#999;
+    font-size:.24rem;
+    margin:.3rem .8rem .29rem .23rem;
+    line-height:.35rem;
+}
+/* 内容文本区域 */
+.newscont-text-box{
+   padding-right:.34rem;
+   padding-left:.21rem;
+   line-height: .35rem;
+   font-size:.24rem;
+}
+.newscont-text3{
+    margin:.49rem 0rem
+}
+.newscont-text5{
+    margin-top:.5rem;
+}
+/* 内容文本图片部分 */
+.newscont-text-img{
+    width:7.06rem;
+    height:4.68rem;
+    background:url(../imgs/imgs-newscont/newscont1.jpg);
+    background-size:contain;
+    margin:.35rem .22rem .36rem .22rem;
+}
+/* 按钮部分 */
+.newscont-button{
+    padding:.8rem .21rem .71rem .21rem;
+}
+.newscont-button ul{
+    background:#14926a;
+    display: flex;
+    text-align:center;
+    font-size:.28rem;
+    border-radius:.30rem 0rem .30rem 0rem;
+    color:#fff;
+}
+.newscont-but-buttom{
+    margin-top:.6rem;
+}
+.newscont-but-page{
+    margin:.18rem .14rem .16rem .38rem;
+}
+.newscont-but-link{
+    width:.01rem;
+    height:.7rem;
+    background:rgba(255,255,255,0.5);
+}
+.newscont-but-text{
+    width:4.75rem;
+    margin:.17rem 0rem .16rem .17rem;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+.newscont-button a{
+    color:#fff;
+    text-decoration: none;
+}
+/* 按钮点击效果部分 */
+.newscont-button ul:active{
+    background:#fff;
+}
+.newscont-button ul:active a{
+    color:#14926a;
+    background: #fff;
+} 
