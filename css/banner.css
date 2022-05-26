@@ -1,29 +1,31 @@
-
-*{
-    margin:0;
-    padding:0;
-    list-style: none;
-}
-/* 导航栏样式 */
-nav{
-    width:100%; 
-    background-color: rgba(255,255,255,0.7);
-    position: fixed; 
-    z-index:100;
-}
-.indx-navwrapper{
-    padding-top:0.19rem;
-    padding-bottom:0.15rem;
-    padding-left:0.2rem;
-    padding-right:0.38rem;
+*{margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
+.banner{width: 100%; display: flex;}
+a{text-decoration: none;}
+img{width: 100%;height: 100%;}
+/* 阴影样式 */
+.banner-shadow{
+    width: 100%;
+    height: 0.9rem;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7);
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    z-index: 2;
 }
-.indx-logo img{
-    width:1.77rem;
-    height: 0.55rem;
+/* 头部logo样式 */
+.banner-shadow-logo{
+    width: 1.62rem;
+    margin-left: 0.22rem;
 }
-.icon {
+/* 又不菜单样式 */
+.banner-shadow-menu{
+    width: 0.4rem;
+    margin-right: 0.38rem;
+}
+
+.icon5 {
     width: 0.42rem;
     height: 0.42rem;
     vertical-align: -0.15em;
@@ -33,13 +35,7 @@ nav{
     margin-bottom: 0.76rem;
     margin-right:0.02rem;
 }
-.indx-menu{
-    margin-top:0.13rem;
-}
-.indx-menu>img{
-    width:.4rem;
-    height:.27rem;
-}
+
 .indx-caidan{
     width:3.46rem;
     display: none;
@@ -49,8 +45,9 @@ nav{
     bottom:0;
     background-color: rgba(0,0,0,0.5);
     transition: all 0.3s;
+    overflow: scroll;
 }
-.indx-menu:hover .indx-caidan{
+.banner-shadow-menu:hover .indx-caidan{
     display: block;
 }
 .indx-caidanwrapper{

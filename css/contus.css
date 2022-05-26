@@ -1,0 +1,446 @@
+*{margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
+.banner{width: 100%; display: flex;}
+a{text-decoration: none;}
+img{width: 100%;height: 100%;}
+/* 阴影样式 */
+.banner-shadow{
+    width: 100%;
+    height: 0.9rem;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+/* 头部logo样式 */
+.banner-shadow-logo{
+    width: 1.62rem;
+    margin-left: 0.22rem;
+}
+/* 又不菜单样式 */
+.banner-shadow-menu{
+    width: 0.4rem;
+    margin-right: 0.38rem;
+}
+
+.icon5 {
+    width: 0.42rem;
+    height: 0.42rem;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    align-self: flex-end;
+    margin-bottom: 0.76rem;
+    margin-right:0.02rem;
+}
+
+.indx-caidan{
+    width:3.46rem;
+    display: none;
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.5);
+    transition: all 0.3s;
+    overflow: scroll;
+}
+.banner-shadow-menu:hover .indx-caidan{
+    display: block;
+}
+.indx-caidanwrapper{
+    padding-left:.41rem;
+    padding-right:.34rem;
+    padding-top:0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.indx-layer1 a{
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    color: #14916a;
+    height: .56rem;
+    line-height: .56rem;
+    border-top-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    margin-bottom:.4rem;
+    padding-left:.42rem;
+    font-size:.24rem;
+}
+.indx-layer a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    height: .56rem;
+    line-height: .56rem;
+    border-top-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    margin-bottom:.4rem;
+    padding-left:.42rem;
+    font-size:.24rem;
+}
+.indx-layer:active a{
+    background-color: white;
+    color: #14916a;
+    height: .56rem;
+    line-height: .56rem;
+    border-top-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    margin-bottom:.4rem;
+    padding-left:.42rem;
+    /* transition: 0.3s; */
+}
+
+
+.title{
+    width:100%;
+    padding-top: 0.55rem;
+    padding-bottom: 0.4rem;
+}
+.title-box{
+    position:relative;
+    padding-bottom: .17rem;
+    text-align:center;
+}
+.title h2{
+    font-weight:normal;
+    font-size: .36rem;
+    color:#333;
+
+}
+.title-link{
+    width:1.19rem;
+    height:.03rem;
+    background:#14926a;
+    position:absolute;
+    left:50%;
+    margin-left:-.565rem;
+    top:99.5%;
+}
+.subtitlewrap{
+    display: flex;
+    justify-content: center;
+    border:1px solid #d3d3d3;
+    border-radius: .3rem 0rem .3rem 0rem ;
+    width: 3.86rem;
+}
+.subtitle{
+    padding:.15rem;
+    color:#aaa;
+    font-size:.2rem;
+}
+
+/* 内容第二部分 */
+.contus-qr{
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.45rem;
+    background-color: rgba(20,145,106,0.7);
+    display: flex;
+    align-items: center;
+}
+/* 二维码样式 */
+.contus-qr-left{
+    width: 1.35rem;
+    height: 1.35rem;
+    margin-left: 1.45rem;
+}
+
+.contus-qr-right{
+    margin-left: 0.5rem;
+    width: 2.93rem;
+}
+
+.top-line{
+    height: 1px;
+    width: 0.28rem;
+    background-color: #f6f6f6;
+}
+
+.qr-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* 内容第三部分 */
+.contus-text{
+    background-color: rgb(246,246,246);
+    padding-top: 0.3rem;
+    padding-bottom: 0.39rem;
+}
+
+.contus-text-content{margin-left: 0.23rem;}
+
+.contus-text-demo{
+    display: flex;
+    margin-top: 0.13rem;
+}
+/* 内容扩展性 */
+.contus-text-demo p:first-child{min-width: 0.7rem;}
+
+.contus-text p{font-size: 0.24rem}
+/* 内容第四部分 */
+.contus-form{
+    margin-top: 0.65rem;
+    position: relative;
+}
+
+.demo-form{
+    width: 6.88rem;
+    margin-left: 0.36rem;
+    padding-bottom: 0.65rem;
+}
+
+.demo-form-title{
+    width: 4.06rem;
+    margin-left: 1.36rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle-line1{
+    height: 1px;
+    width: 0.49rem;
+    background-color: black;
+}
+
+.icon {
+    width: 0.2rem;
+    height: 0.2rem;
+    fill: currentColor;
+    overflow: hidden;
+  }
+
+.form-model1{
+    margin-top: 0.26rem;
+    display: flex;
+    align-items: center;
+}
+/* 输入框样式 */
+input{
+      flex: 1;
+      height: 0.7rem;
+      border: solid 1px rgb(180,180,180);
+      outline: none;
+      margin-left: 0.38rem;
+      padding-left: 0.2rem;
+      font-size: 0.24rem;
+  }
+
+  ::-webkit-input-placeholder{
+      color: #aaaaaa;;
+  }
+/* 下拉框样式 */
+select{
+    flex: 1;
+    height: 0.7rem;
+    border: solid 1px rgb(180,180,180);
+    outline: none;
+    margin-left: 0.38rem;
+    padding-left: 0.2rem;
+    appearance: none;
+    font-size: 0.24rem;
+    color: #aaaaaa;
+}
+
+.icon1{
+    width: 0.4rem;
+    height: 0.4rem;
+    fill: currentColor;
+    overflow: hidden;
+    opacity: 0.7;
+    position: absolute;
+    top: 3.78rem;
+    right: 0.4rem;
+    /* 取消当前层事件监听,也可理解为样式穿透 */
+    pointer-events: none;
+  }
+
+button{
+    width: 2.72rem;
+    height: 0.6rem;
+    margin-left: 2.08rem;
+    background-color: #333333;
+    color: #fff;
+    border-radius: 0.3rem;
+    margin-top: 0.52rem;
+    font-size: 0.24rem;
+}
+/* 地图容器 */
+#container{
+    width: 100%;
+    height: 5.32rem;
+}
+
+/* 尾部第一部分样式 */
+.footer-demo1{
+    width: 100%;
+    background-color: rgb(246,246,246);
+    padding: 0.5rem 0 0.55rem 0;
+}
+/* 尾部logo样式 */
+.footer-logo{
+    width: 1.92rem;
+    margin: 0 auto;
+}
+/* 第一部分电话号码  */
+.footer-number{
+    width: 4.47rem;
+    margin: 0.2rem auto ;
+}
+
+.footer-number-model{
+    width: 4.47rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-number-cover1, .footer-number-cover2{
+    width: 4.47rem;
+    margin: 0 auto;
+    border: 1px solid rgb(206,206,206);
+}
+.footer-number-cover1{height: 0.18rem;}
+.footer-number-cover2{height: 0.2rem;}
+.icon2{
+    width: 0.32rem;
+    height: 0.32rem;
+  }
+
+.icon2-demo1{
+    max-width: 3.9rem;
+    font-size: 0.24rem;
+    color: #14916a;
+    margin-left: 0.1rem;
+  }
+
+  .icon-dmeo-model{
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+/* 第一部分文字内容 */
+.footer-content{
+    display: flex;
+    align-items: center;
+    padding-left: 0.22rem;
+    margin-top: 0.2rem;
+  }
+/* 文字内容左侧图片样式 */
+.same-demo{display: flex; align-items: center;}
+.xdemo1{width: 0.19rem; height: 0.16rem; margin-left: -0.03rem;}
+.xdemo2{width: 0.12rem; height: 0.16rem;}
+.xdemo3{width: 0.16rem; height: 0.16rem;}
+.xdemo4{width: 0.16rem; height: 0.1rem;}
+
+.footer-content p{
+      flex: 1;
+      margin-left: 0.16rem;
+      font-size: 0.24rem;
+  }
+
+  /* 尾部第二部分 */
+  .footer-demo2{
+      padding-top: 0.37rem;
+      padding-bottom: 0.2rem;
+  }
+
+  .demo2-line{
+      width: 5.8rem;
+      margin: 0 auto;
+  }
+
+  .demo2-line a{
+    font-size: 0.24rem;
+    text-align: center;
+    color: #555555;
+  }
+
+  .demo2-line p{
+    font-size: 0.24rem;
+    text-align: center;
+    color: #555555;
+  }
+
+.demo2-line-demo{
+    margin-top: 0.45rem;
+    display: flex;
+    height: 0.8rem;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.demo2-line-tips{
+    display: flex;
+    justify-content: space-between;
+}
+
+.demo2-line-img{
+    width: 4.61rem;
+    margin: 0 auto;
+    margin-top: 0.47rem;
+}
+
+/* 尾部第三部分 */
+.footer-demo3{
+    background-color: rgb(246,246,246);
+    padding-top: 0.4rem;
+}
+
+.footer-demo3 ul{
+    display: flex;
+    justify-content: space-around;
+}
+/* 列表样式 */
+.footer-demo3 li{
+    width: 0.24rem;
+    height: 0.24rem;
+    display: flex;
+    align-items: center;
+}
+
+.test{
+    font-size: 0.28rem;
+    color: #14916a;
+    text-align: center;
+}
+
+.footer-demo3-line{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(222,222,222);
+    margin-top: 0.26rem;
+}
+
+.footer-bottom{
+    margin-top: 0.2rem;
+    padding-bottom: 0.28rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom-content{
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom p{
+    font-size: 0.24rem;
+    text-align: center;
+}
+
+.icon3 {
+    width: 0.24rem;
+    height: 0.24rem;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
