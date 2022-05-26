@@ -18,11 +18,13 @@ img{width: 100%;height: 100%;}
 .banner-shadow-logo{
     width: 1.62rem;
     margin-left: 0.22rem;
+    display: flex;
 }
 /* 又不菜单样式 */
 .banner-shadow-menu{
     width: 0.4rem;
     margin-right: 0.38rem;
+    display: flex;
 }
 
 .icon5 {
