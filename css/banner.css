@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -15,7 +16,6 @@ nav{
     padding-bottom:0.15rem;
     padding-left:0.2rem;
     padding-right:0.38rem;
-
     display: flex;
     justify-content: space-between;
 }
@@ -72,6 +72,7 @@ nav{
     border-bottom-right-radius: .3rem;
     margin-bottom:.4rem;
     padding-left:.42rem;
+    font-size:.24rem;
 }
 .indx-layer a{
     display: block;
@@ -83,6 +84,7 @@ nav{
     border-bottom-right-radius: .3rem;
     margin-bottom:.4rem;
     padding-left:.42rem;
+    font-size:.24rem;
 }
 .indx-layer:active a{
     background-color: white;

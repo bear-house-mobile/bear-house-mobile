@@ -14,9 +14,8 @@
         if (width > maxWidth) {
             width = maxWidth;
         }
-        //与淘宝做法不同，直接采用简单的rem换算方法1rem=100px
         var rem = width * 100 / designWidth;
-        //兼容UC开始
+
         rootStyle = "html{font-size:" + rem + 'px !important}';
         rootItem = document.getElementById('rootsize') || document.createElement("style");
         if (!document.getElementById('rootsize')) {
@@ -32,7 +31,6 @@
                 rootItem.innerText = rootStyle
             }
         }
-        //兼容UC结束
         docEl.style.fontSize = rem + "px";
     };
     refreshRem();
