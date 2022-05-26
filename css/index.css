@@ -77,6 +77,8 @@ nav{
     fill: currentColor;
     overflow: hidden;
     align-self: flex-end;
+    /* position: absolute; */
+    /* right: 0; */
     margin-bottom: 0.76rem;
     margin-right:0.02rem;
 }
@@ -89,17 +91,15 @@ nav{
 }
 .indx-caidan{
     width:3.46rem;
-    /* opacity: 0; */
     display: none;
     position: fixed;
     top:0;
     right: 0;
     bottom:0;
     background-color: rgba(0,0,0,0.5);
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
 }
 .indx-menu:hover .indx-caidan{
-    /* opacity: 1; */
     display: block;
 }
 .indx-caidanwrapper{
@@ -107,6 +107,7 @@ nav{
     padding-right:.34rem;
     padding-top:0.3rem;
     display: flex;
+    /* position: relative; */
     flex-direction: column;
 }
 
@@ -121,6 +122,7 @@ nav{
     border-bottom-right-radius: .3rem;
     margin-bottom:.4rem;
     padding-left:.42rem;
+    font-size:.24rem;
 }
 .indx-layer a{
     display: block;
@@ -132,6 +134,7 @@ nav{
     border-bottom-right-radius: .3rem;
     margin-bottom:.4rem;
     padding-left:.42rem;
+    font-size:.24rem;
 }
 .indx-layer:active a{
     background-color: white;
@@ -154,23 +157,27 @@ nav{
 }
 
 /* 版心上面部分内容 */
+/* 第一标题下的简介 */
 .indx-details>p{
     font-size:0.24rem;
     padding-right:0.14rem; 
     color:#333;
     text-align: justify;
 }
+/* 简介下面图片和电话区域 */
 .indx-detailsimg{
     /* width: 100%; */
     display: flex;
     margin-top: 0.27rem;  
     margin-bottom:0.62rem;
 }
+/* 图片和电话区域中左边图片的设置 */
 .indx-detailsimg>img{
     width:2.87rem;
     height: 1.91rem;
     margin-right:0.02rem;
 }
+/* 右边电话区域父盒子设置 */
 .indx-detailsphone{
     background-color:#14916a;
     color:white;
@@ -180,20 +187,30 @@ nav{
     flex-direction: column;
     flex-grow:1;
 }
+/* 电话号码前面的电话图案 */
 .indx-detailsphone p img{
     width:0.27rem;
     height: 0.26rem;
     margin-right:0.23rem;
+    /* vertical-align: bottom; */
 }
+/* 电话号码文本样式设置 */
 .indx-detailsphone p{
     font-weight: bold;
+    min-width:2.8rem;
     color:white;
     font-size:.32rem;
     margin-left:0.24rem;
+    /* display: flex; */
 }
+/* .indx-detailsphone p span{
+    flex-grow: 1;
+} */
+/* 电话号码中第二行文本和第一行文本之间的间距 */
 .indx-detailsphone>p:last-child{
     margin-top:.17rem;
 }
+/* 联系我们盒子 */
 .indx-contact{
     margin-top:0.1rem;
     background-color:white;
@@ -203,6 +220,7 @@ nav{
     width:1.74rem;
     align-self: flex-end;
 }
+/* 联系我们中a标签的样式设置 */
 .indx-contact a{
     display: block;
     height: 0.5rem;
@@ -214,87 +232,77 @@ nav{
 }
 
 /* 版心下面部分内容 */
+/* 每个图片盒子的父盒子 */
 .indx-bottom{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
+/* 存放图片的盒子*/
 .indx-bottomwrap{
-    height: 2.34rem;
     position: relative;
-    /* z-index: -1; */
+    flex-grow:1;
     margin-bottom:0.2rem;
 }
+/* 图片设置占满盒子 */
 .indx-bottomwrap img{
-    height: 100%;
     width: 100%;
 }
-.indx-bottomwrap{
-    width:48.5%;
-    height: 2.34rem;
-}
+/* 图片内半透明盒子区域 */
 .indx-bottomcont{
     position: absolute;
-    top:.74rem;
-    bottom:.74rem;
-    left:.9rem;
-    right:.9rem;
-
-    line-height: .87rem;
     background-color: rgba(0,0,0,0.5);
     color:white;
-    text-align: center;
     font-size: .36rem;
+    /* 让文字居中显示 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.indx-bottomwrap:first-of-type{
-    margin-left:0rem;
-}
-.indx-bottomwrap{
-    margin-bottom:0.2rem;
-}
-.indx-bottomwrap:last-of-type{
-    margin-right:0rem;
-}
+/* 1366尺寸时的响应式 四个图片一排 */
 @media screen and (max-width:1366px){
     .indx-bottomwrap{
-        width:23.8%;
-        height:1.2rem;
+        width:22%;
+        margin-left:0.2rem;
     }
     .indx-bottomcont{
         top:.35rem;
         bottom:.35rem;
         left:.4rem;
         right:.4rem;
-    
-        line-height: .5rem;
-        background-color: rgba(0,0,0,0.5);
-        color:white;
-        text-align: center;
         font-size: .2rem;
     }
+    .indx-bottomwrap:first-of-type{
+        margin-left:0;
+    }
+    .indx-bottomwrap:nth-of-type(5){
+        margin-left:0;
+    }
 }
+/* 1024尺寸时的响应 3个图片一排 */
 @media screen and (max-width:1024px){
     .indx-bottomwrap{
-        width:31.9%;
-        height: 1.7rem;
+        width:28%;
+        margin-left:0;
     }
-    .indx-bottomcont{
-        top:.56rem;
-        bottom:.56rem;
-        left:.6rem;
-        right:.6rem;
-    
-        line-height: .58rem;
-        background-color: rgba(0,0,0,0.5);
-        color:white;
-        text-align: center;
-        font-size: .24rem;
+    .indx-bottomwrap:nth-of-type(2){
+        margin-left:0.2rem;
+    }
+    .indx-bottomwrap:nth-of-type(3){
+        margin-left:0.2rem;
+    }
+    .indx-bottomwrap:nth-of-type(5){
+        margin-left:0.2rem;
     }
     .indx-bottomwrap:nth-of-type(6){
-        margin-right:0rem;
-    } 
-    .indx-bottomwrap:nth-of-type(3){
-        margin-right: 0rem;
+        margin-left:0.2rem;
+    }
+    .indx-bottomcont{
+        top:.48rem;
+        bottom:.48rem;
+        left:.6rem;
+        right:.6rem;
+        font-size: .24rem;
     }
     .indx-bottomwrap:nth-of-type(7){
         display: none;
@@ -303,18 +311,22 @@ nav{
         display: none;
     }
 }
+/* 768尺寸时的响应式 2个图片一排 */
 @media screen and (max-width:768px){
     .indx-bottomwrap{
-        width:48.5%;
-        height: 2.34rem;
+        width:48%;
+    }
+    .indx-bottomwrap:nth-of-type(2n){
+        margin-left:0.2rem;
+    }
+    .indx-bottomwrap:nth-of-type(3){
+        margin-left: 0;
     }
     .indx-bottomcont{
         top:.74rem;
         bottom:.74rem;
         left:.9rem;
         right:.9rem;
-    
-        line-height: .87rem;
         font-size: .36rem;
     }
     .indx-bottomwrap:nth-of-type(5){
@@ -330,19 +342,49 @@ nav{
         display: none;
     }
 }
-@media screen and (max-width:375px){
+/* 414尺寸时的响应式 1个图片一排 展示4个图片*/
+@media screen and (max-width:414px){
     .indx-bottomwrap{
         width:100%;
-        height: 4.68rem;
+        margin-left:0;
     }
     .indx-bottomcont{
         top:1.48rem;
         bottom:1.48rem;
         left:1.8rem;
         right:1.8rem;
-    
-        line-height: 1.74rem;
-        font-size: .36rem;
+        font-size: .72rem;
+    }
+    .indx-bottomwrap:nth-of-type(2n){
+        margin-left:0rem;
+    }
+    .indx-bottomwrap:nth-of-type(5){
+        display: none;
+    }
+    .indx-bottomwrap:nth-of-type(6){
+        display: none;
+    }
+    .indx-bottomwrap:nth-of-type(7){
+        display: none;
+    }
+    .indx-bottomwrap:nth-of-type(8){
+        display: none;
+    }
+}
+/* 375尺寸时的响应式 1个图片一排 展示2个图片 */
+@media screen and (max-width:375px){
+    .indx-bottomwrap{
+        width:100%;
+    }
+    .indx-bottomcont{
+        top:1.48rem;
+        bottom:1.48rem;
+        left:1.8rem;
+        right:1.8rem;
+        font-size: .72rem;
+    }
+    .indx-bottomwrap:nth-of-type(2){
+        margin-left:0;
     }
     .indx-bottomwrap:nth-of-type(3){
         display: none;
