@@ -54,17 +54,18 @@
     justify-content: flex-end;
 }
 /* 下半部分文字样式 */
+.bottom-text-box{
+    padding:.18rem .24rem .7rem .22rem;
+    display: flex;
+    justify-content: space-between;
+}
 .bottom-text{
     font-size: 0.28rem;
-    margin-left: 0.22rem;
-    margin-top: 0.18rem;
 }
 .bottom-text2{
     color: #666666;
-    font-size: 0.2rem;
-    text-align: right;
-    margin-right: 0.24rem;
-    margin-bottom: 0.7rem;
+    font-size: 0.21rem;
+    margin-top:.1rem;
 }
 /* 下半部分箭头样式 */
 .left-box{
@@ -133,17 +134,25 @@
     position:absolute;
     left:50%;
     margin-left:-.565rem;
-    top:99.5%;
+    top:98.5%;
 }
 .subtitlewrap{
     display: flex;
     justify-content: center;;
     margin-bottom: 0.4rem;
 }
-.subtitle{
-    padding:.15rem 0.58rem .15rem 0.58rem;
+.subtitle1{
+    padding:.14rem 1.4rem;
     border:1px solid #d3d3d3;
     color:#aaa;
-    font-size:.16rem;
+    font-size:.2rem;
     border-radius: .3rem 0rem .3rem 0rem ;
 }
+.subtitle2{
+    padding:.14rem 1.3rem;
+    border:1px solid #d3d3d3;
+    color:#aaa;
+    font-size:.2rem;
+    border-radius: .3rem 0rem .3rem 0rem ;
+}
+

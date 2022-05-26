@@ -2,100 +2,7 @@
 .banner{width: 100%; display: flex;}
 a{text-decoration: none;}
 img{width: 100%;height: 100%;}
-/* 阴影样式 */
-.banner-shadow{
-    width: 100%;
-    height: 0.9rem;
-    position: fixed;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 2;
-}
-/* 头部logo样式 */
-.banner-shadow-logo{
-    width: 1.62rem;
-    margin-left: 0.22rem;
-    display: flex;
-}
-/* 又不菜单样式 */
-.banner-shadow-menu{
-    width: 0.4rem;
-    margin-right: 0.38rem;
-    display: flex;
-}
 
-.icon5 {
-    width: 0.42rem;
-    height: 0.42rem;
-    vertical-align: -0.15em;
-    fill: currentColor;
-    overflow: hidden;
-    align-self: flex-end;
-    margin-bottom: 0.76rem;
-    margin-right:0.02rem;
-}
-
-.indx-caidan{
-    width:3.46rem;
-    display: none;
-    position: fixed;
-    top:0;
-    right: 0;
-    bottom:0;
-    background-color: rgba(0,0,0,0.5);
-    transition: all 0.3s;
-    overflow: scroll;
-}
-.banner-shadow-menu:hover .indx-caidan{
-    display: block;
-}
-.indx-caidanwrapper{
-    padding-left:.41rem;
-    padding-right:.34rem;
-    padding-top:0.3rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.indx-layer1 a{
-    display: block;
-    text-decoration: none;
-    background-color: white;
-    color: #14916a;
-    height: .56rem;
-    line-height: .56rem;
-    border-top-left-radius: .3rem;
-    border-bottom-right-radius: .3rem;
-    margin-bottom:.4rem;
-    padding-left:.42rem;
-    font-size:.24rem;
-}
-.indx-layer a{
-    display: block;
-    text-decoration: none;
-    color: white;
-    height: .56rem;
-    line-height: .56rem;
-    border-top-left-radius: .3rem;
-    border-bottom-right-radius: .3rem;
-    margin-bottom:.4rem;
-    padding-left:.42rem;
-    font-size:.24rem;
-}
-.indx-layer:active a{
-    background-color: white;
-    color: #14916a;
-    height: .56rem;
-    line-height: .56rem;
-    border-top-left-radius: .3rem;
-    border-bottom-right-radius: .3rem;
-    margin-bottom:.4rem;
-    padding-left:.42rem;
-    /* transition: 0.3s; */
-}
 
 
 .title{
@@ -212,7 +119,7 @@ img{width: 100%;height: 100%;}
     background-color: black;
 }
 
-.icon {
+.icon7 {
     width: 0.2rem;
     height: 0.2rem;
     fill: currentColor;
