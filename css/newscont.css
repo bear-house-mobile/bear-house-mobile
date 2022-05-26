@@ -89,10 +89,7 @@
 }
 /* 内容文本图片部分 */
 .newscont-text-img{
-    width:7.06rem;
     height:4.68rem;
-    background:url(../imgs/imgs-newscont/newscont1.jpg);
-    background-size:contain;
     margin:.35rem .22rem .36rem .22rem;
 }
 /* 按钮部分 */
