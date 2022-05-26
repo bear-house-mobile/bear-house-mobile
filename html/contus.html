@@ -3,17 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"   content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/contus.css">
+    <script src="../js/iconfont.js"></script>
+    <script src="../js/iconfont1.js"></script>
+    <script src="../js/rem.js"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=2KYAXePrBbnYFtB2V5KAwouQEZ1Q7LfC"></script>
 </head>
 <body>
-    <div class="banner"></div>
+    <!-- 头部 -->
+    <div class="banner">
+        <!-- 背景 -->
+        <img src="../imgs/imgs-contactus/banner.jpg" alt="">
+        <!-- 阴影 -->
+        <div class="banner-shadow">
+            <!-- 头部logo -->
+            <div class="banner-shadow-logo">
+                <a href="../index.html"><img src="../imgs/logo/banner-logo.png" alt=""></a>
+            </div>
+            <!-- 头部菜单 -->
+            <div class="banner-shadow-menu">
+                <img src="../imgs/logo/banner-menu.png" alt="">
+                <div class="indx-caidan">
+                    <!-- 设置padding撑开距离 -->
+                    <div class="indx-caidanwrapper">
+                        <svg class="icon5" aria-hidden="true">
+                            <use xlink:href="#icon-close-copy"></use>
+                        </svg>
+                        <ul>
+                            <li>
+                                <div class="indx-layer1">
+                                    <a href="../index.html">首页</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="indx-layer">
+                                    <a href="../html/abtus.html">了解我们</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="indx-layer">
+                                    <a href="../html/case.html">案例分享</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="indx-layer">
+                                    <a href="#">精装服务</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="indx-layer">
+                                    <a href="#">优质产品</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="indx-layer">
+                                    <a href="../html/news.html">公司动态</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="indx-layer">
+                                    <a href="../html/contus.html">找我们聊聊</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 标题 -->
+    <div class="title">
+        <div class="title-box">
+            <h2>联系方式</h2>
+            <div class="title-link"></div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <div class="subtitlewrap">
+                <div class="subtitle">CONTACT US</div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容第二部分 -->
+    <div class="contus-qr">
+        <div class="contus-qr-left">
+            <img src="../imgs/logo/QRcode.jpg" alt="">
+        </div>
+        <div class="contus-qr-right">
+            <div class="qr-top">
+                <div class="top-line"></div>
+                <p style="font-size: 0.36rem; color:#f6f6f6;">扫微信二维码</p>
+                <div class="top-line"></div>
+            </div>
+            <p style="font-size: 0.24rem; text-align: center; margin-top: 0.2rem;">
+                添加<a href=""><span style="color: #f6f6f6;">熊管家</span></a>微信咨询</p>
+        </div>
+    </div>
+    <!-- 内容第三部分 -->
+    <div class="contus-text">
+        <div class="contus-text-content">
+            <div class="contus-text-demo" style="max-width: 4.6rem;">
+                <p><b>地址&nbsp;:&nbsp;</b></p>
+                <p class="icon-dmeo-model">成都市温江区珠江广场写字楼15楼</p>
+            </div>
+            <div class="contus-text-demo" style="max-width: 2.6rem;">
+                <p><b>电话&nbsp;:&nbsp;</b></p>
+                <p class="icon-dmeo-model">028-82708866</p>
+            </div>
+            <div class="contus-text-demo" style="max-width: 2.5rem;">
+                <p><b>手机&nbsp;:&nbsp;</b></p>
+                <p class="icon-dmeo-model">13558833169</p>
+            </div>
+            <div class="contus-text-demo" style="max-width: 2.3rem;">
+                <p><b>Q&nbsp;Q&nbsp;:&nbsp;</b></p>
+                <p class="icon-dmeo-model">123456789</p>
+            </div>
+            <div class="contus-text-demo" style="max-width: 4.5rem;">
+                <p class="icon-dmeo-model">09:00&nbsp;AM&nbsp;~&nbsp;06:00&nbsp;PM&nbsp;,&nbsp;周末正常上班</p>
+            </div>
+        </div>
+    </div>
+    <!-- 内容第四部分 -->
+    <div class="contus-form">
+        <div class="demo-form">
+            <div class="demo-form-title">
+                <div class="middle-line1"></div>
+                <p style="font-size: 0.36rem;">请客户顾问联系我</p>
+                <div class="middle-line1"></div>
+            </div>
+            <!-- form表单 -->
+            <form action="">
+                <div class="form-model1">
+                    <div style="display: flex;">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-bixuan"></use>
+                        </svg>
+                        <p style="font-size: 0.24rem; margin-left: -0.05rem;">您的姓名</p>
+                    </div>
+                    <input type="text" name="" id="" placeholder="请填写您的姓名">
+                </div>
+                <div class="form-model1">
+                    <div style="display: flex;">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-bixuan"></use>
+                        </svg>
+                        <p style="font-size: 0.24rem; margin-left: -0.05rem;">手机号码</p>
+                    </div>
+                    <input type="text" name="" id="" placeholder="请填写您的手机号码">
+                </div>
+                <div class="form-model1">
+                    <p style="font-size: 0.24rem; padding-left: 0.15rem;">建筑面积</p>
+                    <input type="text" name="" id="" placeholder="选填">
+                </div>
+                <div class="form-model1">
+                    <p style="font-size: 0.24rem; padding-left: 0.15rem;">致电时间</p>
+                    <select name="" id="">
+                        <option value="">上午</option>
+                        <option value="">中午</option>
+                        <option value="">下午</option>
+                        <option value="">晚上</option>
+                    </select>
+                </div>
+                <svg class="icon1" aria-hidden="true">
+                    <use xlink:href="#icon-daosanjiao"></use>
+                </svg>
+                <button>立即预约</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 地图容器 -->
+    <div id="container"></div>
+
+    <!-- 尾部 -->
+    <div class="footer">
+        <!-- 尾部第一部分 -->
+        <div class="footer-demo1">
+            <!-- 尾部logo -->
+            <div class="footer-logo">
+                <a href="../index.html"><img src="../imgs/logo/footer-logo.png" alt=""></a> 
+            </div>
+
+            <!-- 第一部分电话号码 -->
+            <div class="footer-number">
+                <!-- 背景覆盖 -->
+                <div class="footer-number-cover1" style="border-bottom: none;"></div>
+                <div class="footer-number-model">
+                    <div class="icon2">
+                        <img src="../imgs/logo/phone.jpg" alt="">
+                    </div>
+                    <div class="icon2-demo1">
+                        <p class="icon-dmeo-model"><b>028-82708866&nbsp;/&nbsp;13558833169</b></p>
+                    </div>
+                </div>
+                <div class="footer-number-cover2" style="border-top: none;"></div>
+            </div>
+
+            <!-- 第一部分文字内容 -->
+            <div style="margin-top: 0.4rem;">
+                <div class="footer-content" style="max-width: 4rem;">
+                    <div class="xdemo1 same-demo">
+                        <img src="../imgs/logo/footer-home.png" alt="">
+                    </div>
+                    <p class="icon-dmeo-model">成都熊管家装饰装修有限公司</p>
+                </div>
+                <div class="footer-content" style="max-width: 5.1rem;">
+                    <div class="xdemo2 same-demo">
+                        <img src="../imgs/logo/footer-address.png" alt="">
+                    </div>
+                    <p class="icon-dmeo-model" style="margin-left: 0.2rem;">地址&nbsp;:&nbsp;成都市温江区珠江广场写字楼15楼</p>
+                </div>
+                <div class="footer-content" style="max-width: 6.2rem;">
+                    <div class="xdemo3 same-demo">
+                        <img src="../imgs/logo/footer-phone.png" alt="">
+                    </div>
+                    <p class="icon-dmeo-model">联系电话&nbsp;:&nbsp;028-82708866&nbsp;(&nbsp;座机&nbsp;)&nbsp;/13558833169</p>
+                </div>
+                <div class="footer-content" style="max-width: 4.1rem;">
+                    <div class="xdemo4 same-demo">
+                        <img src="../imgs/logo/footer-email.png" alt="">
+                    </div>
+                    <p class="icon-dmeo-model">E-mail&nbsp;:&nbsp;admian@admin.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 尾部第二部分 -->
+        <div class="footer-demo2">
+            <div class="demo2-line">
+                <p>快速导航</p>
+                <div class="demo2-line-demo">
+                    <div class="demo2-line-tips">
+                        <a href="../html/abtus.html">了解我们</a>
+                        <p>/</p>
+                        <a href="../html/case.html">案例分享</a>
+                        <p>/</p>
+                        <a href="#">精装服务</a>
+                    </div>
+                    <div class="demo2-line-tips">
+                        <a href="#">优质产品</a>
+                        <p>/</p>
+                        <a href="../html/news.html">公司动态</a>
+                        <p>/</p>
+                        <a href="#">联系我们</a>
+                    </div>
+                </div>
+                <div class="demo2-line-img">
+                    <img src="../imgs/logo/footer.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- 尾部第三部分 -->
+        <div class="footer-demo3">
+            <p class="test">快捷入口</p>
+            <div style="margin-top: 0.43rem;">
+                <ul>
+                    <li>
+                        <img src="../imgs/logo/wechat.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../imgs/logo/webo.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../imgs/logo/dzdp.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../imgs/logo/tiktok.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../imgs/logo/qijia.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../imgs/logo/tbt.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <p class="test" style="margin-top: 0.55rem;">互联网家装引领者</p>
+            <!-- 横线 -->
+            <div class="footer-demo3-line"></div>
+            <!-- 底部 -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>Copyright&nbsp;</p>
+                    <svg class="icon3" aria-hidden="true">
+                        <use xlink:href="#icon-copyright"></use>
+                    </svg>
+                    <p>2015-2019&nbsp;&nbsp;</p>
+                    <p>成都熊管家装饰装修有限公司&nbsp;版权所有</p>
+                </div>
+            </div>
+        </div>
 
 
+    </div>
 
-
-
-
-    <div class="footer"></div>
+    <script type="text/javascript">
+        var map = new BMap.Map("container");// 创建地图实例 
+        var point = new BMap.Point(103.87066608348736, 30.692211831152697);// 创建点坐标 
+        map.centerAndZoom(point, 17);// 初始化地图，设置中心点坐标和地图级别 
+        map.enableScrollWheelZoom(true);  //开启鼠标滚轮缩放
+        var marker = new BMap.Marker(point);
+        //将覆盖物添加到地图中
+        map.addOverlay(marker);
+    </script> 
 </body>
 </html>
