@@ -451,3 +451,19 @@ button{
     fill: currentColor;
     overflow: hidden;
   }
+
+  .test2{
+    font-size: 0.24rem; 
+    margin-left: -0.05rem; 
+    width: 0.96rem; 
+    height: 0.3rem; 
+    overflow: hidden;
+  }
+
+  .test3{
+    font-size: 0.24rem; 
+    padding-left: 0.15rem;
+    width: 1.11rem; 
+    height: 0.3rem; 
+    overflow: hidden;
+  }

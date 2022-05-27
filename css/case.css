@@ -39,8 +39,8 @@
     justify-content: center;
 }
 .subtitle{
-    width:3.86rem;
-    padding:.15rem 0rem;
+   min-width:3.86rem;
+    padding:.1rem 0rem;
     border:.5px solid #d3d3d3;
     color:#aaa;
     font-size:.2rem;
@@ -73,9 +73,9 @@
 .case-cont li:active .trans{
     display: block;
 }
-.case-cont li:active .triange{
+/* .case-cont li:active .triange{
     display: block;
-}
+} */
 /* 半透明部分 */
 .trans{
     position: absolute;
@@ -99,6 +99,7 @@
     font-size:.38rem;
     overflow: hidden;
     text-overflow: ellipsis;
+    max-width: 2.24rem;
 }
 /* 三角形部分 */
 .triange{
@@ -112,7 +113,7 @@
     top:0px;
     right:0px;
     opacity: 0.5;
-    display:none;
+    /* display:none; */
 }
 /* 按钮部分 */
 .case-button{
@@ -128,9 +129,15 @@
     text-decoration: none;
     border-radius: .3rem 0rem .3rem 0rem;
     color:#fffffd;
+    /* white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+.case-button a>p{
+    max-width: 0.89rem;
     white-space:nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 /* 点击按钮样式部分 */
 .case-button a:active{

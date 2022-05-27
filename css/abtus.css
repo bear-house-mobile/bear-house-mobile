@@ -36,17 +36,18 @@
 }
 /* 按钮样式 */
 .more{
+    padding: 0.16rem 0.3rem;
     color: #ffffff;
     background-color: #14916a;
     border-top-left-radius: 0.3rem;
     border-bottom-right-radius:0.3rem;
     font-size: 0.28rem;
-    line-height: 0.6rem;
-    height: 0.6rem;
+    /* line-height: 0.6rem; */
+    /* height: 0.6rem; */
     margin-top: 0.38rem;
     margin-right: 0.22rem;
     margin-bottom: 0.2rem;
-    width: 1.72rem;
+    /* width: 1.72rem; */
     text-align: center;
 }
 /* 按钮弹性盒子 */
@@ -143,7 +144,9 @@
     margin-bottom: 0.4rem;
 }
 .subtitle1{
-    padding:.14rem 1.4rem;
+    min-width: 3.86rem;
+    text-align: center;
+    padding:.1rem 0rem;
     border:1px solid #d3d3d3;
     color:#aaa;
     font-size:.2rem;
