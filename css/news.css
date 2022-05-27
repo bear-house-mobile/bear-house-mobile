@@ -10,8 +10,7 @@
     height: 0.01rem;
     /* margin-left: 0.21rem; */
     /* margin-right: 0.21rem; */
-    margin-top: 0.15rem;
-    margin-bottom: 0.15rem;
+    margin:0.2rem 0;
     background-color:rgba(0, 0, 0, 0.1);
 }
 /* 图片样式 */

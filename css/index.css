@@ -102,14 +102,26 @@ nav{
     bottom:0;
     background-color: rgba(0,0,0,0.5);
     /* transition: all 0.3s; */
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 .indx-ulwrapper{
-    height:7rem;  
+    height:8rem;  
+}
+@media screen and (max-height:1450px){
+    .indx-ulwrapper{
+        height: 5.5rem;
+        overflow: scroll;
+    }
+}
+@media screen and (max-height:1000px){
+    .indx-ulwrapper{
+        height: 5.5rem;
+        overflow: scroll;
+    }
 }
 @media screen and (max-height:800px){
     .indx-ulwrapper{
-        height: 5.5rem;
+        height: 4rem;
         overflow: scroll;
     }
 }
