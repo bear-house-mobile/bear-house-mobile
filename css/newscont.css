@@ -31,7 +31,7 @@
     position:absolute;
     left:50%;
     margin-left:-0.565rem;
-    top:99%;
+    top:99.5%;
 }
 .subtitlewrap{
     display: flex;
@@ -69,8 +69,16 @@
 .newscont-time span{
     color:#14926a;
 }
+.newscont-time p:nth-of-type(1){
+    max-width:2.26rem;
+    white-space:nowrap;
+    overflow:hidden;
+}
 .newscont-time p:nth-of-type(2){
     margin-left:.25rem;
+    max-width:2.6rem;
+    white-space:nowrap;
+    overflow:hidden;
 }
 .newscont-text1{
     color:#999;
@@ -113,6 +121,11 @@
 }
 .newscont-but-page{
     margin:.18rem .14rem .16rem .38rem;
+}
+.newscont-but-page>p{
+    max-width:.85rem;
+    white-space:nowrap;
+    overflow:hidden;
 }
 .newscont-but-link{
     width:.01rem;
