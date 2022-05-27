@@ -29,12 +29,7 @@
 }
 
 img{width: 100%; height: 100%;}
-/* .news-img a>img{
-    width:100%;
-}
-.news-img img{
-    width:100%;
-} */
+
 /* 内容文本样式 */
 .news-text1{
     font-size: 0.28rem;
@@ -55,6 +50,19 @@ img{width: 100%; height: 100%;}
     margin-top: 0.12rem;
     display: flex;
     align-items: flex-end;
+    
+}
+.time{
+    width: 1.70rem;
+    height: 0.25rem;
+    overflow: hidden;
+    display: inline-block;
+}
+.liulan{
+    width: 1.25rem;
+    height: 0.25rem;
+    overflow: hidden;
+    display: inline-block;
 }
 /* 文本盒子样式 */
 .text-box{
@@ -77,8 +85,6 @@ background-color: #14916a;
 border-top-left-radius: 0.3rem;
 border-bottom-right-radius: 0.3rem;
 font-size: 0.28rem;
-/* line-height: 0.6rem; */
-/* height: 0.7rem; */
 margin-right: 0.22rem;
 width: 1.72rem;
 text-align: center;
@@ -91,8 +97,6 @@ background-color: #14916a;
 border-top-left-radius: 0.3rem;
 border-bottom-right-radius: 0.3rem;
 font-size: 0.28rem;
-/* line-height: 0.6rem; */
-/* height: 0.7rem; */
 margin-left: 0.22rem;
 width: 1.72rem;
 text-align: center;
