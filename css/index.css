@@ -233,10 +233,10 @@
     overflow: hidden;
     vertical-align: middle;
 }
-.indx-detailsphone p img{
-    /* vertical-align: middle; */
-    /* margin-top:-0.4rem; */
-}
+/* .indx-detailsphone p img{
+    vertical-align: middle;
+    margin-top:-0.4rem;
+} */
 /* 电话号码中第二行文本和第一行文本之间的间距 */
 .indx-detailsphone>p:last-child{
     margin-top:.17rem;
