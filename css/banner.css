@@ -1,4 +1,7 @@
-
+*{margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
+.banner{width: 100%; display: flex;}
+a{text-decoration: none;}
+img{width: 100%;height: 100%;}
 *{
     margin:0;
     padding:0;
@@ -7,7 +10,6 @@
 /* 阴影样式 */
 .banner-shadow{
     width: 100%;
-    height: 0.9rem;
     position: fixed;
     top: 0;
     background-color: rgba(255, 255, 255, 0.7);
@@ -15,6 +17,8 @@
     align-items: center;
     justify-content: space-between;
     z-index: 2;
+    padding-top: 0.19rem;
+    padding-bottom: 0.16rem;
 }
 /* 头部logo样式 */
 .banner-shadow-logo{
@@ -42,7 +46,11 @@
 }
 
 .indx-caidanwrapper ul{
-    margin-top: 1.1rem;
+    margin-top: 0.6rem;
+}
+
+.indx-caidanwrapper ul li{
+    margin-top: 0.45rem;
 }
 
 .indx-caidan{
@@ -52,7 +60,7 @@
     top:0;
     right: 0;
     bottom:0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     transition: all 0.3s;
     overflow: scroll;
 }
@@ -65,42 +73,48 @@
     padding-top:0.3rem;
     display: flex;
     flex-direction: column;
+    padding-bottom: 0.4rem;
+}
+
+.indx-layer1{
+    padding: 0.13rem 1rem 0.43rem 0.42rem;
+    background-color: white;
+    border-top-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    height: 0.48rem;
+    overflow: hidden;
+}
+.indx-layer{
+    padding: 0.13rem 1rem 0.12rem 0.42rem;
+    /* background-color: white; */
+    border-top-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    /* max-height: 0.1rem; */
+    overflow: hidden;
 }
 
 .indx-layer1 a{
-    display: block;
     text-decoration: none;
-    background-color: white;
     color: #14916a;
-    height: .56rem;
-    line-height: .56rem;
-    border-top-left-radius: .3rem;
-    border-bottom-right-radius: .3rem;
-    margin-bottom:.4rem;
-    padding-left:.42rem;
     font-size:.24rem;
 }
 .indx-layer a{
-    display: block;
     text-decoration: none;
-    color: white;
-    height: .56rem;
-    line-height: .56rem;
-    border-top-left-radius: .3rem;
-    border-bottom-right-radius: .3rem;
-    margin-bottom:.4rem;
-    padding-left:.42rem;
+    color: #14916a;
     font-size:.24rem;
+    color: white;
 }
-.indx-layer:active a{
+/* .indx-layer a:active{
     background-color: white;
     color: #14916a;
+    height: 0.56rem;
+    width: 2.71rem;
     height: .56rem;
     line-height: .56rem;
     border-top-left-radius: .3rem;
     border-bottom-right-radius: .3rem;
+    padding: 0.08rem 1rem 0.4rem 0.42rem;
     margin-bottom:.4rem;
     padding-left:.42rem;
-    /* transition: 0.3s; */
-}
-
+    transition: 0.3s;
+} */

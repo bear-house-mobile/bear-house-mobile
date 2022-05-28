@@ -42,11 +42,11 @@ img{width: 100%;height: 100%;}
 }
 
 .indx-caidanwrapper ul{
-    margin-top: 1.2rem;
+    margin-top: 0.6rem;
 }
 
 .indx-caidanwrapper ul li{
-    margin-top: 0.3rem;
+    margin-top: 0.45rem;
 }
 
 .indx-caidan{
@@ -73,7 +73,7 @@ img{width: 100%;height: 100%;}
 }
 
 .indx-layer1{
-    padding: 0.08rem 1rem 0.4rem 0.42rem;
+    padding: 0.13rem 1rem 0.43rem 0.42rem;
     background-color: white;
     border-top-left-radius: .3rem;
     border-bottom-right-radius: .3rem;
@@ -81,7 +81,7 @@ img{width: 100%;height: 100%;}
     overflow: hidden;
 }
 .indx-layer{
-    padding: 0.08rem 1rem 0.08rem 0.42rem;
+    padding: 0.13rem 1rem 0.12rem 0.42rem;
     /* background-color: white; */
     border-top-left-radius: .3rem;
     border-bottom-right-radius: .3rem;
@@ -100,17 +100,20 @@ img{width: 100%;height: 100%;}
     font-size:.24rem;
     color: white;
 }
-.indx-layer:active a{
+/* .indx-layer a:active{
     background-color: white;
     color: #14916a;
+    height: 0.56rem;
+    width: 2.71rem;
     height: .56rem;
     line-height: .56rem;
     border-top-left-radius: .3rem;
     border-bottom-right-radius: .3rem;
-    /* margin-bottom:.4rem; */
+    padding: 0.08rem 1rem 0.4rem 0.42rem;
+    margin-bottom:.4rem;
     padding-left:.42rem;
-    /* transition: 0.3s; */
-}
+    transition: 0.3s;
+} */
 
 .title{
     width:100%;
