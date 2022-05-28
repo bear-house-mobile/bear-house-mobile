@@ -77,6 +77,7 @@
     height: 0.44rem;
     margin-top: -1.8rem;
     margin-left: 0.22rem;
+    opacity: 0.8;
 }
 .right-box{
     border-radius: 50%;
@@ -85,6 +86,7 @@
     height: 0.44rem;
     margin-top: -1.8rem;
     margin-right: 0.22rem;
+    opacity: 0.8;
 }
 .left-arrow{
     margin-left: 0.18rem;

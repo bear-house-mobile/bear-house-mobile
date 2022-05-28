@@ -79,7 +79,7 @@
 /* 半透明部分 */
 .trans{
     position: absolute;
-    background:rgba(0,0,0,0.5);
+    background:rgba(0,0,0,0.7);
     top:.41rem;
     left:.33rem;
     right:.38rem;
@@ -125,16 +125,13 @@
 
 .case-button a{
     background:#14926a;
-    padding:.18rem .5rem .16rem .38rem;
+    padding:.18rem .5rem .17rem .38rem;
     text-decoration: none;
     border-radius: .3rem 0rem .3rem 0rem;
     color:#fffffd;
-    /* white-space:nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; */
 }
-
 .case-button a>p{
+    font-size:.28rem;
     max-width: 0.89rem;
     white-space:nowrap;
     overflow: hidden;

@@ -53,14 +53,6 @@
     font-size:.24rem;
     border-radius: .3rem 0rem .3rem 0rem ;
 }
-
-
-
-*{
-    margin:0;
-    padding:0;
-    list-style: none;
-}
 /* 阴影样式 */
 .banner-shadow{
     width: 100%;
@@ -217,15 +209,22 @@
 /* 电话号码文本样式设置 */
 .indx-detailsphone p{
     font-weight: bold;
-    min-width:2.8rem;
+    /* max-width:3rem;
+    overflow: hidden; */
     color:white;
     font-size:.32rem;
     margin-left:0.24rem;
-    /* display: flex; */
 }
-/* .indx-detailsphone p span{
-    flex-grow: 1;
-} */
+.indx-detailsphone p span{
+    display: inline-block;
+    max-width:2.4rem;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.indx-detailsphone p img{
+    /* vertical-align: middle; */
+    /* margin-top:-0.4rem; */
+}
 /* 电话号码中第二行文本和第一行文本之间的间距 */
 .indx-detailsphone>p:last-child{
     margin-top:.17rem;
@@ -238,10 +237,16 @@
     border-bottom-right-radius: 0.3rem;
     text-align: center;
     width:1.74rem;
+    /* text-overflow: ellipsis; */
     align-self: flex-end;
 }
 /* 联系我们中a标签的样式设置 */
 .indx-contact a{
+    max-width: 1.74rem;
+    max-height: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     display: block;
     height: 0.5rem;
     line-height: 0.5rem;
@@ -279,6 +284,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.indx-bottomcont span{
+    display: inline-block;
+    max-width:1.5rem;
+    max-height: 0.72rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 /* 1366尺寸时的响应式 四个图片一排 */
 @media screen and (max-width:1366px){
